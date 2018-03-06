@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StepperView</string>
+    <string-array name="stepper_view_titles">
+        <item>Step 1</item>
+        <item>Step 2</item>
+        <item>Step 3</item>
+        <item>Step 4</item>
+    </string-array>
+</resources>

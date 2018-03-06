@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StepperView">
+        <attr name="count" format="integer" />
+
+        <attr name="titles" format="reference" />
+        <attr name="showTitles" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="current" value="1"/>
+            <enum name="all" value="2"/>
+        </attr>
+        <attr name="textViewTitle" format="reference" />
+
+        <attr name="drawablePrevStep" format="reference" />
+        <attr name="drawableCurrentStep" format="reference" />
+        <attr name="drawableNextStep" format="reference" />
+
+        <attr name="drawablePrevLine" format="reference" />
+        <attr name="drawableNextLine" format="reference" />
+
+        <attr name="stepDimensions" format="dimension" />
+        <attr name="titleMarginTop" format="dimension" />
+        <attr name="lineHeight" format="dimension" />
+    </declare-styleable>
+</resources>
