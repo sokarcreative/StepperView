@@ -24,6 +24,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation "com.android.support:appcompat-v7:${android_support_version}"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    //implementation 'com.github.sokarcreative.StepperView:master-SNAPSHOT'
+    //implementation 'com.github.sokarcreative.StepperView:0.0.1alpha1'
     implementation project(':library')
 }
