@@ -62,7 +62,7 @@ class StepperView @JvmOverloads constructor(context: Context, attrs: AttributeSe
                 }
             }
         }
-    var lineHeight: Int = convertDpToPixel(context, 2f).toInt()
+    var lineHeight: Int = convertDpToPixel(context, 1f).toInt()
         set(value){
             field = value
             if(isBuilt){
