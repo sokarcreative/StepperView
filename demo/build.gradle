@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.sokarcreative'
 
 android {
     compileSdkVersion 27
@@ -24,5 +27,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation "com.android.support:appcompat-v7:${android_support_version}"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //implementation 'com.github.sokarcreative.StepperView:master-SNAPSHOT'
     implementation project(':library')
 }
