@@ -36,10 +36,9 @@ class StepperView @JvmOverloads constructor(context: Context, attrs: AttributeSe
                 for(i: Int in 0 until titleTextViews.count()){
                     titleTextViews[i].apply {
                         text = if(value != null && value.size > i) value[i] else ""
-
                         when{
                             text.isBlank() -> visibility = View.GONE
-                            showTitles == SHOW_NONE -> visibility = View.GONE
+                            showTitles == HIDE_TITLES -> visibility = View.GONE
                             showTitles == SHOW_ALL_TITLES -> visibility = View.VISIBLE
                             showTitles == SHOW_CURRENT_TITLE && currentPosition == i -> visibility = View.VISIBLE
                         }
@@ -325,8 +324,7 @@ class StepperView @JvmOverloads constructor(context: Context, attrs: AttributeSe
     private fun convertDpToPixel(context: Context, dp: Float): Float = dp * (context.resources.displayMetrics.densityDpi.toFloat() / DisplayMetrics.DENSITY_DEFAULT)
 
     companion object {
-        private val TAG = "StepperView"
-        val SHOW_NONE = 0
+        val HIDE_TITLES = 0
         val SHOW_CURRENT_TITLE = 1
         val SHOW_ALL_TITLES = 2
     }
